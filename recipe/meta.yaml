@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: stim
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/PreibischLab/STIM/archive/refs/tags/v{{ version }}.zip
-  sha256: 49ea61a664228073049c7b6bd1b69a5836091872bded2bfea5863aeaa188e445
+  sha256: e7262f837d54e48e1dec577b234c846d5a98a9d53c144890f467af71cc1f4c37
 
 build:
   number: 0
@@ -14,6 +14,7 @@ build:
 requirements:
   build:
     - openjdk
+    - blosc
     - maven
   host:
     - openjdk
@@ -33,7 +34,7 @@ about:
     transcriptomics data, which builds on the powerful libraries Imglib2, N5,
     BigDataViewer and Fiji.
   license: GPL-3.0-or-later
-  license_file: license
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
