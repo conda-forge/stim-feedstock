@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: stim
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/PreibischLab/STIM/archive/refs/tags/v{{ version }}.zip
-  sha256: e7262f837d54e48e1dec577b234c846d5a98a9d53c144890f467af71cc1f4c37
+  sha256: 96f64ecd03f472cacf455e51611dec026788dac69476b24730dc364345c63200
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
